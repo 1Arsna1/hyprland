@@ -1,0 +1,9 @@
+#tray {
+}
+#tray menu {
+  background-color: @black;
+}
+
+#clock {
+  color: @white;
+}

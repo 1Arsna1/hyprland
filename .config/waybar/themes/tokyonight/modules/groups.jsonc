@@ -1,0 +1,99 @@
+{
+	"include": [
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/audio.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hyprland.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/light.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/media.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/power.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/status.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/battery.jsonc"
+	],
+	"group/percentage": {
+		"orientation": "horizontal",
+		"modules": ["group/light", "group/audio"]
+	},
+	"group/battery": {
+		"children-class": "batstat",
+		"orientation": "horizontal",
+		"format": "{icon}",
+		"format-icons": { "default": "1" },
+		"modules": ["battery", "upower"]
+	},
+	"group/hyprland": {
+		"children-class": "hypr",
+		"orientation": "horizontal",
+		"format": "{icon}",
+		"format-icons": { "default": "1" },
+		"modules": ["clock", "hyprland/workspaces", "keyboard-state"]
+	},
+	"group/media": {
+		"children-class": "mediact",
+		"orientation": "horizontal",
+		"format": "{icon}",
+		"format-icons": { "default": "1" },
+		"modules": ["mpris", "cava", "mpris#2"]
+	},
+	"group/audio": {
+		"children-class": "audio",
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": false
+		},
+		"format": "{icon}",
+		"format-icons": { "default": "1" },
+		"modules": ["wireplumber", "pulseaudio/slider"]
+	},
+	"group/light": {
+		"children-class": "brightness",
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": false
+		},
+		"format": "{icon}",
+		"format-icons": { "default": "1" },
+		"modules": ["backlight", "backlight/slider"]
+	},
+	"group/status": {
+		"children-class": "hardware",
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": false,
+			"click-to-reveal": true
+		},
+		"format": "{icon}",
+		"modules": [
+			"custom/expand",
+			"gamemode",
+			"network",
+			"bluetooth",
+			"cpu",
+			"memory",
+			"temperature"
+		]
+	},
+	"custom/expand": {
+		"format": "󰧀",
+		"tooltip-format": "Hardware info"
+	},
+	"group/power": {
+		"children-class": "powermenu",
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+		},
+		"modules": [
+			"user",
+			"custom/power", // First element is the "group leader" and won't ever be hidden
+			"custom/quit",
+			"custom/lock",
+			"custom/reboot"
+		]
+	}
+}

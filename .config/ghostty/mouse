@@ -1,0 +1,4 @@
+mouse-hide-while-typing = false
+mouse-shift-capture = false
+mouse-scroll-multiplier = 1
+focus-follows-mouse = false

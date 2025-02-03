@@ -1,0 +1,15 @@
+#custom-power,
+#custom-quit,
+#custom-lock,
+#custom-reboot {
+  border: 2px solid;
+  border-color: @violet;
+}
+
+#custom-power:hover,
+#custom-quit:hover,
+#custom-lock:hover,
+#custom-reboot:hover {
+  color: @azure;
+  border-color: @purple;
+}

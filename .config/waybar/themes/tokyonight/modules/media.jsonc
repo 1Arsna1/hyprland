@@ -1,0 +1,33 @@
+{
+	"cava": {
+		"framerate": 120,
+		"autosens": 1,
+		"bars": 12,
+		"method": "pipewire",
+		"source": "auto",
+		"bar_delimiter": 0,
+		"input_delay": 2,
+		"sleep_timer": 2,
+		"hide_on_silence": true,
+		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+		"on-click": "playerctl play-pause"
+	},
+	"mpris": {
+		"format": "{player_icon}",
+		"format-paused": "{status_icon}",
+		"on-click": "playerctl previous",
+		"player-icons": {
+			"default": "󰓕",
+			"mpv": "🎵"
+		}
+	},
+	"mpris#2": {
+		"format": "{player_icon}",
+		"format-paused": "{status_icon}",
+		"on-click": "playerctl next",
+		"player-icons": {
+			"default": "󰓗",
+			"mpv": "🎵"
+		}
+	}
+}

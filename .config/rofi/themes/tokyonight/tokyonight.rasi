@@ -1,0 +1,268 @@
+configuration {
+	modes: "window,drun,run,ssh";
+  font: "Hack Nerd Font Mono 10";
+	location: 0;
+	yoffset: 0;
+	xoffset: 0;
+	show-icons: true;
+	terminal: "ghostty";
+	ssh-client: "ssh";
+	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+	icon-theme: "TokyoNight-SE";
+	sort: true;
+	sorting-method: "fzf";
+	case-sensitive: false;
+	sidebar-mode: true;
+	hover-select: true;
+	combi-modes: "window,run";
+	matching: "fuzzy";
+	display-window: "";
+	display-run: "";
+	display-ssh: "";
+	display-drun: "󱓟";
+  display-combi: "";
+}
+@theme "/dev/null"
+* {
+
+black:  rgba(40, 42, 63, 0.8);
+grey:   rgba(115, 122, 162, 1);
+white: rgba(192, 202, 245, 1);
+blue:  rgba(61, 89, 161, 1);
+azure:  rgba(125, 207, 255, 1);
+turqoise: rgba(180, 249, 248, 1);
+purple: rgba(187, 154, 247, 1);
+violet: rgba(157, 124, 216, 1);
+red:  rgba(255, 0, 124, 1);
+}
+
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       800px;
+    height:                      500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               5px;
+    border-color:                @violet;
+    cursor:                      "default";
+    /* Backgroud Colors */
+    background-color:            @black;
+    /* Backgroud Image */
+    //background-image:          url("/path/to/image.png", none);
+    /* Simple Linear Gradient */
+    //background-image:          linear-gradient(red, orange, pink, purple);
+    /* Directional Linear Gradient */
+    //background-image:          linear-gradient(to bottom, pink, yellow, magenta);
+    /* Angle Linear Gradient */
+    //background-image:          linear-gradient(45, cyan, purple, indigo);
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     15px;
+    border:                      0px solid;
+    border-radius:               0px 0px 0px 0px;
+    border-color:                transparent;
+    background-color:            @black;
+    children:                    [ "inputbar", "message", "listview", "mode-switcher" ];
+}
+
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @purple;
+    background-color:            transparent;
+    text-color:                  @white;
+    children:                    [ "prompt", "textbox-prompt-colon", "entry" ];
+}
+prompt {
+    font:                        "Hack Nerd Font Mono 20";
+    enabled:                     true;
+    background-color:            transparent;
+    text-color:                  @blue;
+}
+textbox-prompt-colon {
+    font:                        "Hack Nerd Font Mono 15";
+    padding:                     3px 0px 0px 0px;
+    enabled:                     true;
+    expand:                      false;
+    str:                         "::";
+    background-color:            transparent;
+    text-color:                  @blue;
+}
+entry {
+    font:                        "Hack Nerd Font Mono 12";
+    padding:                     7px 0px 0px 0px;
+    enabled:                     true;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           @blue;
+}
+  num-filtered-rows {
+    enabled:                     true;
+    expand:                      false;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+textbox-num-sep {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "/";
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+num-rows {
+    enabled:                     true;
+    expand:                      false;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+case-indicator {
+    enabled:                     true;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     2;
+    lines:                       10;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   true;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     5px;
+    margin:                      50px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  @white;
+    cursor:                      "default";
+}
+scrollbar {
+    handle-width:                10px ;
+    handle-color:                @blue;
+    border-radius:               10px;
+    background-color:            transparent;
+}
+
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     5px 10px;
+    border:                      0px solid;
+    border-radius:               20px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  @white;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  @white;
+}
+element normal.urgent {
+    background-color:            transparent;
+    text-color:                  @turqoise;
+}
+element normal.active {
+    background-color:            transparent;
+    text-color:                  @red;
+}
+element selected.normal {
+    background-color:            transparent;
+    text-color:                  @azure;
+}
+element selected.urgent {
+    background-color:            transparent;
+    text-color:                  @turqoise;
+}
+element selected.active {
+    background-color:            transparent;
+    text-color:                  @red;
+}
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @white;
+}
+element alternate.urgent {
+    background-color:            transparent;
+    text-color:                  @turqoise;
+}
+element alternate.active {
+    background-color:            transparent;
+    text-color:                  @red;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        24px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+    text-color:                  @blue;
+}
+button {
+    font:                        "Hack Nerd Font Mono 20";
+    padding:                     5px 10px;
+    border:                      2px solid;
+    border-radius:               20px;
+    border-color:                @violet;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            transparent;
+    text-color:                  @azure;
+    border-color:                @purple;
+}

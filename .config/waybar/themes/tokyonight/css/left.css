@@ -1,0 +1,44 @@
+#custom-wallpaper {
+  margin: 0px 0px 0px 10px;
+}
+
+#percentage {
+  margin: 0.5em 1em 0em 1em;
+  border-radius: 5px;
+  border: 2px solid;
+}
+#backlight {
+  margin: 0px 10px 0px 5px;
+  color: @yellow;
+}
+#wireplumber {
+  margin: 0px 10px 0px 5px;
+  color: @azure;
+}
+#wireplumber.muted {
+  color: @red;
+}
+#backlight-slider {
+}
+#backlight-slider slider {
+}
+#backlight-slider trough {
+  min-height: 5px;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: @grey;
+}
+#backlight-slider highlight {
+  background-color: @yellow;
+}
+#pulseaudio-slider slider {
+}
+#pulseaudio-slider trough {
+  min-height: 5px;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: @grey;
+}
+#pulseaudio-slider highlight {
+  background-color: @azure;
+}

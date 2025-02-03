@@ -1,0 +1,25 @@
+@define-color black  rgba(40, 42, 63, 0.8);
+@define-color grey   rgba(115, 122, 162, 1);
+@define-color white rgba(192, 202, 245, 1);
+@define-color blue  rgba(61, 89, 161, 1);
+@define-color azure  rgba(125, 207, 255, 1);
+@define-color turqoise rgba(180, 249, 248, 1);
+@define-color purple rgba(187, 154, 247, 1);
+@define-color violet rgba(157, 124, 216, 1);
+@define-color red  rgba(255, 0, 124, 1);
+@define-color orange rgba(255, 158, 100, 1);
+@define-color yellow rgba(255, 199, 119, 1);
+@define-color invisible rgba(0, 0, 0, 0);
+
+* {
+  font-family: Hack Nerd Font Mono;
+  font-size: 15px;
+  font-weight: bold;
+  all: initial;
+}
+window#waybar {
+  background-color: @black;
+  color: @black;
+  border-top: 2px solid;
+  border-color: @violet;
+}
