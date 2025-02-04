@@ -14,9 +14,7 @@
 #### Programs
 
 1. Programs this rice needs
-   |fish starship nwg-look flatpak nemo swww pulsemixer pavucontrol waybar swaync
-1. Personal Programs i like to use (note: some are flatpaks)
-   |Vesktop Zen-Browser
+   |fish starship nwg-look thunar swww pulsemixer pavucontrol waybar-cava-git swaync neovim zellij
 
 ## ToDo
 
