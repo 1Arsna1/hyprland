@@ -13,13 +13,14 @@
 
 * {
   font-family: Hack Nerd Font Mono;
-  font-size: 15px;
   font-weight: bold;
   all: initial;
 }
 window#waybar {
   background-color: @black;
   color: @black;
-  border-top: 2px solid;
+  border: 2px solid;
   border-color: @violet;
+  border-radius: 5px;
+  font-size: 15px;
 }

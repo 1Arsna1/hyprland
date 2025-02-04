@@ -1,10 +1,9 @@
 {
 	"include": [
-		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/audio.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/percentage.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hyprland.jsonc",
-		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/light.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/media.jsonc",
-		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/power.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/menu.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/status.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/custom.jsonc",
@@ -14,15 +13,14 @@
 	"exclusive": true,
 	"passthrough": false,
 	"gtk-layer-shell": true,
-	"height": 30,
 	"width": 1920,
 	"spacing": 5,
 	"layer": "bottom",
 	"position": "bottom",
 	"reload_style_on_change": true,
 	"modules-left": ["custom/wallpaper", "group/percentage", "group/media"],
-	"modules-center": ["tray", "group/hyprland", "group/battery"],
-	"modules-right": ["group/status", "custom/notify", "group/power"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["tray", "group/hardware", "group/menu"],
 	"tray": {
 		"icon-size": 20,
 		"spacing": 10

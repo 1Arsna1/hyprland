@@ -1,0 +1,43 @@
+{
+	"wireplumber": {
+		"format": "<span font='20'>{icon}</span> <span font='15' rise='1500'>{volume}%</span>",
+		"format-icons": ["", "", ""],
+		"format-muted": "<span font='15'></span>",
+		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+		"on-click": "ghostty --class=sound.sound -e pulsemixer"
+	},
+	"pulseaudio/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	},
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "<span font='15'>{icon}</span> <span font='15'>{percent}%</span>",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"on-scroll-up": "brightnessctl set +5%",
+		"on-scroll-down": "brightnessctl set 5%-"
+	},
+	"backlight/slider": {
+		"device": "intel_backlight",
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	}
+}

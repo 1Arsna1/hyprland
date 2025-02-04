@@ -1,9 +1,12 @@
-#tray {
+#workspaces {
 }
-#tray menu {
-  background-color: @black;
+#workspaces button {
+  margin: 0em 0.25em 0em 0.25em;
 }
-
-#clock {
-  color: @white;
+#workspaces button.active {
+  margin: 0.2em 0.5em 0.2em 0.5em;
+}
+#workspaces button.empty {
+}
+#workspaces button.persistent {
 }
