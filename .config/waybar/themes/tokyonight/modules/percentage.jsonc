@@ -1,7 +1,7 @@
 {
 	"wireplumber": {
-		"format": "<span font='20'>{icon}</span> <span font='15' rise='1500'>{volume}%</span>",
-		"format-icons": ["", "", ""],
+		"format": "<span font='15'>{icon}</span> <span font='15'>{volume}%</span>",
+		"format-icons": [" ", " ", " "],
 		"format-muted": "<span font='15'></span>",
 		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
 		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",

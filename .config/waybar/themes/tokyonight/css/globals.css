@@ -12,7 +12,7 @@
 @define-color invisible rgba(0, 0, 0, 0);
 
 * {
-  font-family: Hack Nerd Font Mono;
+  font-family: Hack Nerd Font Mono x;
   font-weight: bold;
   all: initial;
 }
@@ -22,5 +22,4 @@ window#waybar {
   background: @black;
   border-color: @violet;
   border-radius: 5px;
-  font-size: 15px;
 }

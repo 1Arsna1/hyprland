@@ -25,7 +25,7 @@
 		}
 	},
 	"user": {
-		"format": "<span font='20'></span>",
+		"format": "<span font='15'> </span>",
 		"interval": 60,
 		"height": 30,
 		"width": 30,

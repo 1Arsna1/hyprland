@@ -1,15 +1,31 @@
-#custom-power,
-#custom-quit,
-#custom-lock,
-#custom-reboot {
-  border: 2px solid;
-  border-color: @violet;
+#user {
+  margin: 0px 1em 0px 0.5em;
+}
+#clock {
+  margin: 0px 1em 0px 0.5em;
 }
 
-#custom-power:hover,
-#custom-quit:hover,
-#custom-lock:hover,
-#custom-reboot:hover {
-  color: @azure;
-  border-color: @purple;
+#custom-notify {
+  margin: 0px 1em 0px 1em;
+}
+
+#keyboard-state {
+  margin: 0px 1em 0px 0.5em;
+}
+
+#hardware {
+  margin: 0px 0px 0px 2em;
+}
+#gamemode,
+#bluetooth,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#upower {
+  margin: 0px 0.7em 0px 0.7em;
+}
+
+#tray {
 }

@@ -8,8 +8,18 @@
 		"bar_delimiter": 0,
 		"input_delay": 2,
 		"sleep_timer": 2,
-		"hide_on_silence": true,
-		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+		"hide_on_silence": false,
+		"format-icons": [
+			"<span color='#b4f9f8'>▁</span>",
+			"<span color='#b4f9f8'>▂</span>",
+			"<span color='#b4f9f8'>▃</span>",
+			"<span color='#b4f9f8'>▄</span>",
+			"<span color='#b4f9f8'>▅</span>",
+			"<span color='#b4f9f8'>▆</span>",
+			"<span color='#b4f9f8'>▇</span>",
+			"<span color='#b4f9f8'>█</span>"
+		],
+		"waves": true,
 		"on-click": "playerctl play-pause"
 	},
 	"mpris": {
@@ -17,8 +27,7 @@
 		"format-paused": "{status_icon}",
 		"on-click": "playerctl previous",
 		"player-icons": {
-			"default": "󰓕",
-			"mpv": "🎵"
+			"default": "<span font='20px'>󰓕</span>"
 		}
 	},
 	"mpris#2": {
@@ -26,8 +35,7 @@
 		"format-paused": "{status_icon}",
 		"on-click": "playerctl next",
 		"player-icons": {
-			"default": "󰓗",
-			"mpv": "🎵"
+			"default": "<span font='20px'>󰓗</span>"
 		}
 	}
 }

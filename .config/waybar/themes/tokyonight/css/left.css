@@ -74,3 +74,26 @@
   border-radius: 5px;
   background-color: @azure;
 }
+
+#media {
+  margin: 0em 0em 0em 2em;
+}
+
+#mpris,
+#mpris.2 {
+  color: @turqoise;
+  margin: 0px 1em 0px 1em;
+}
+#cava {
+  background: rgb(137, 180, 250);
+  /*background: radial-gradient(*/
+  /*  rgba(203, 166, 247, 1) 100%*/
+  /*);*/
+  /*background-size: 400% 400%;*/
+  /*animation: gradient_f 9s cubic-bezier(0.72, 0.39, 0.21, 1) infinite;*/
+  /*text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);*/
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 1em 0px 1em;
+  color: @turquoise;
+}

@@ -9,11 +9,8 @@
 		"show-special": true,
 		"format": "{icon}",
 		"format-icons": {
-			"active": "",
-			"default": ""
-		},
-		"persistent-workspaces": {
-			"*": 10
+			"active": " ",
+			"default": " "
 		}
 	}
 }
