@@ -7,7 +7,8 @@
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/status.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/custom.jsonc",
-		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/battery.jsonc"
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/battery.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/custom.jsonc"
 	],
 	"mod": "overlay",
 	"exclusive": true,

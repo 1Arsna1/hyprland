@@ -11,7 +11,7 @@
 		"return-type": "json"
 	},
 	"custom/expand": {
-		"format": "󰧀",
-		"tooltip-format": "Hardware info"
+		"format": "{icon}",
+		"format-icons": "1"
 	}
 }
