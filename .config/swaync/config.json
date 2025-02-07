@@ -71,15 +71,15 @@
 
                 {
                     "label": "",
-                    "command": "ghostty --class=man.net -e nmtui"
+                    "command": "ghostty --class=system.net -e nmtui"
                 },
                 {
                     "label": "",
-                    "command": "ghostty --class=man.blue -e bluetui"
+                    "command": "ghostty --class=system.blue -e bluetui"
                 },
                 {
                     "label": "",
-                    "command": "ghostty --class=man.stat -e btop"
+                    "command": "ghostty --class=system.stat -e btop"
 
                 },
                 {
@@ -89,7 +89,7 @@
                 },
                 {
                   "label" : "",
-                  "command" : "loginctl terminate-user arsna"
+                  "command" : "$XDG_CONFIG_HOME/hypr/scripts/logoff $USER"
                 },
                 
                 {

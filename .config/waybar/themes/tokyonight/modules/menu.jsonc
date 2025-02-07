@@ -24,13 +24,6 @@
 			"on-scroll-down": "shift_down"
 		}
 	},
-	"user": {
-		"format": "<span font='15'> </span>",
-		"interval": 60,
-		"height": 30,
-		"width": 30,
-		"icon": true
-	},
 	"keyboard-state": {
 		"numlock": true,
 		"capslock": true,

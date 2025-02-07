@@ -4,7 +4,7 @@
 		"format-icons": { "default": "" },
 		"on-click": "notify-send test"
 	},
-	"custom/notify": {
+	"custom/user": {
 		"format": "{icon}",
 		"format-icons": { "default": "" },
 		"on-click": "swaync-client -t",

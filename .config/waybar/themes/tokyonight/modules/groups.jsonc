@@ -9,7 +9,7 @@
 	],
 	"group/menu": {
 		"orientation": "horizontal",
-		"modules": ["keyboard-state", "custom/notify", "clock", "user"]
+		"modules": ["keyboard-state", "clock", "custom/user"]
 	},
 	"group/percentage": {
 		"orientation": "horizontal",

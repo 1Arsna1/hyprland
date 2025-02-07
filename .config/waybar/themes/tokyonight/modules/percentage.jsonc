@@ -3,9 +3,10 @@
 		"format": "<span font='15'>{icon}</span> <span font='15'>{volume}%</span>",
 		"format-icons": [" ", " ", " "],
 		"format-muted": "<span font='15'></span>",
-		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
-		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
-		"on-click": "ghostty --class=sound.sound -e pulsemixer"
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --dec",
+		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle"
 	},
 	"pulseaudio/slider": {
 		"min": 0,
@@ -13,6 +14,8 @@
 		"orientation": "horizontal"
 	},
 	"backlight": {
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brigthness --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brigthness --dec",
 		"device": "intel_backlight",
 		"format": "<span font='15'>{icon}</span> <span font='15'>{percent}%</span>",
 		"format-icons": [
