@@ -12,6 +12,6 @@
 	},
 	"custom/expand": {
 		"format": "{icon}",
-		"format-icons": "1"
+		"format-icons": ""
 	}
 }

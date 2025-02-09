@@ -25,3 +25,13 @@
 
 #tray {
 }
+
+#custom-expand {
+  background: @black;
+  color: @black;
+  box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+}
+#custom-expand:hover {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+}

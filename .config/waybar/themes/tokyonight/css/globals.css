@@ -1,4 +1,5 @@
-@define-color black  rgba(40, 42, 63, 0.8);
+@define-color black  rgba(17, 17, 27, 1);
+@define-color background  rgba(40, 42, 63, 0.5);
 @define-color grey   rgba(115, 122, 162, 1);
 @define-color white rgba(192, 202, 245, 1);
 @define-color blue  rgba(61, 89, 161, 1);
@@ -19,7 +20,7 @@
 window#waybar {
   background-color: @black;
   border: 2px solid;
-  background: @black;
+  background: @background;
   border-color: @violet;
   border-radius: 5px;
 }
