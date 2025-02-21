@@ -1,0 +1,143 @@
+{
+	"include": [
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/percentage.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/menu.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hyprland.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/custom.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/battery.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hardware.jsonc"
+	],
+	"group/menu": {
+		"orientation": "horizontal",
+		"tooltip": false,
+		"modules": [
+			"custom/endb",
+			"tray",
+			"privacy",
+			"keyboard-state",
+			"clock",
+			"custom/user",
+			"group/bat"
+		]
+	},
+	"group/percentage": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"modules": [
+			"wireplumber",
+			"group/audio",
+			"pulseaudio#microphone",
+			"pulseaudio#micro",
+			"group/system"
+		]
+	},
+	"group/percentage#laptop": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"modules": [
+			"backlight",
+			"group/light",
+			"wireplumber",
+			"group/audio",
+			"pulseaudio#microphone",
+			"pulseaudio#micro",
+			"group/system"
+		]
+	},
+	"group/audio": {
+		"tooltip": false,
+		"children-class": "audio",
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": false
+		},
+		"modules": [
+			"wireplumber#percent",
+			"custom/endm2",
+			"pulseaudio/slider",
+			"custom/endb2"
+		]
+	},
+	"group/light": {
+		"tooltip": false,
+		"children-class": "brightness",
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": false
+		},
+		"modules": [
+			"backlight",
+			"backlight#percent",
+			"custom/endm2",
+			"backlight/slider",
+			"custom/endb2"
+		]
+	},
+	"group/hyprland": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"modules": [
+			"custom/endb",
+			"custom/clipboard",
+			"hyprland/workspaces",
+			"custom/stackoverflow",
+			"custom/endm"
+		]
+	},
+	"group/hardware": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": true,
+			"transition-duration": 500,
+			"transition-left-to-right": false
+		},
+		"modules": [
+			"custom/expand",
+			"custom/endm2",
+			"systemd-failed-units",
+			"gamemode",
+			"group/connections",
+			"group/usage",
+			"custom/endb2"
+		]
+	},
+	"group/system": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"modules": ["group/hardware", "custom/endm"]
+	},
+	"group/usage": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": true,
+			"transition-duration": 500,
+			"transition-left-to-right": true
+		},
+		"modules": ["custom/usages", "memory", "cpu", "disk", "temperature"]
+	},
+	"group/connections": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": true,
+			"transition-duration": 500,
+			"transition-left-to-right": true
+		},
+		"modules": ["custom/connect", "network", "bluetooth"]
+	},
+	"group/bat": {
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": false,
+			"transition-duration": 500,
+			"transition-left-to-right": false
+		},
+		"modules": ["battery", "upower"]
+	}
+}

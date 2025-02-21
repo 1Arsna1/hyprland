@@ -1,0 +1,28 @@
+#workspaces {
+  padding: 0em 0.5em 0em 0.5em;
+  background-color: @black;
+}
+#workspaces button {
+  padding: 0em 0.5em 0em 0.5em;
+  color: @blue3;
+}
+#workspaces button.empty {
+  color: @grey4;
+}
+#workspaces button.active {
+  border-radius: 2em;
+  border-color: @white2;
+  color: @yellow;
+}
+#custom-stackoverflow {
+  font-size: 1.25em;
+  padding: 0em 1em 0em 1em;
+  color: @red;
+  background-color: @black;
+}
+#custom-clipboard {
+  font-size: 1.25em;
+  padding: 0em 1em 0em 1em;
+  color: @white2;
+  background-color: @black;
+}

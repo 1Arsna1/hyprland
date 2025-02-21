@@ -1,0 +1,6 @@
+#gtk-single-instance = true
+gtk-titlebar = true
+gtk-tabs-location = top
+adw-toolbar-style = raised
+gtk-wide-tabs = true
+gtk-adwaita = true

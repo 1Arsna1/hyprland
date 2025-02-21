@@ -1,0 +1,30 @@
+#custom-user,
+#clock,
+#keyboard-state,
+#privacy,
+#tray,
+#battery,
+#upower {
+  background-color: @black;
+}
+
+#tray {
+  padding: 0em 1em 0em 1.5em;
+}
+#privacy {
+  color: @green2;
+  padding: 0em 0.5em 0em 1em;
+}
+#keyboard-state {
+  padding: 0em 1em 0em 1em;
+}
+#clock {
+  font-size: 1.3em;
+  color: @white2;
+  padding: 0em 0.5em 0em 0.5em;
+}
+#custom-user {
+  color: @white2;
+  font-size: 1.25em;
+  padding: 0em 1em 0em 0.5em;
+}

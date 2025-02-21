@@ -1,0 +1,17 @@
+font-family = Hack Nerd Font Mono
+font-family-bold = Hack Nerd Font Mono
+font-family-italic = Hack Nerd Font Mono
+font-family-bold-italic = Hack Nerd Font Mono
+font-style = default
+font-style-bold = default
+font-style-italic = default
+font-style-bold-italic = default
+font-synthetic-style = bold,italic,bold-italic
+font-feature =
+font-size = 15
+font-variation =
+font-variation-bold =
+font-variation-italic =
+font-variation-bold-italic =
+font-codepoint-map =
+font-thicken = false

@@ -1,0 +1,11 @@
+config-file = fonts
+config-file = gtk
+config-file = colors
+config-file = cursor
+config-file = mouse
+config-file = keybinds
+config-file = window
+config-file = clipboard
+config-file = theme
+config-default-files = true
+

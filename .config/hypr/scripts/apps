@@ -1,0 +1,12 @@
+#!/bin/bash
+UWSM=uwsm app --
+
+killall waybar 
+killall swaync
+killall swww
+killall hyprsunset
+$UWSM waybar &
+$UWSM swaync &
+$UWSM swww-daemon &
+$UWSM hyprsunset &
+$UWSM nm-applet &

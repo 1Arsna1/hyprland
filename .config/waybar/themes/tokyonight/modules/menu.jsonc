@@ -1,0 +1,60 @@
+{
+	"clock": {
+		"format": "{:%H:%M,%a}",
+		"format-alt": "{:%d %B,%Y}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode": "year",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"on-scroll": 1,
+			"format": {
+				"months": "<span color='#7aa2f7'><b>{}</b></span>",
+				"days": "<span color='#c0caf5'><b>{}</b></span>",
+				"weeks": "<span color='#b4f9f8'><b>W{}</b></span>",
+				"weekdays": "<span color='#ffc777'><b>{}</b></span>",
+				"today": "<span color='#ff007c'><b><u>{}</u></b></span>"
+			}
+		}
+	},
+	"keyboard-state": {
+		"tooltip": false,
+		"numlock": true,
+		"capslock": true,
+		"format": {
+			"numlock": "<span color='#7dcfff' font='10'></span>  {icon} ",
+			"capslock": "<span color='#7dcfff' font='10'></span>  {icon} "
+		},
+		"format-icons": {
+			"locked": "<span color='#c0caf5' font='10'></span> ",
+			"unlocked": "<span color='#c0caf5' font='10'></span> "
+		}
+	},
+	"tray": {
+		"spacing": 5,
+		"icon-size": 16,
+		"show-passive-items": "true"
+	},
+	"privacy": {
+		"icon-spacing": 10,
+		"icon-size": 14,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "screenshare",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-out",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-in",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
+	}
+}

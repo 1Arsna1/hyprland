@@ -1,0 +1,73 @@
+#custom-launcher {
+  color: @teal;
+  padding: 0em 0em 0em 1em;
+  font-size: 1.45em;
+  background-color: @black;
+}
+
+#backlight,
+#backlight.percent,
+#wireplumber,
+#pulseaudio {
+  background-color: @black;
+}
+#backlight {
+  color: @yellow;
+  font-size: 1.25em;
+  padding: 0em 0em 0em 0.5em;
+}
+#backligh.percent {
+  padding: 0em 0.5em 0em 0em;
+  font-size: 1.2em;
+}
+#wireplumber {
+  color: @blue3;
+  font-size: 1.25em;
+  padding: 0em 0.5em 0em 1em;
+}
+#wireplumber.muted {
+  color: @red3;
+  font-size: 1.25em;
+  padding: 0em 1em 0em 1em;
+}
+#wireplumber.percent {
+  padding: 0em 0.5em 0em 0em;
+  font-size: 1.2em;
+}
+#pulseaudio.microphone {
+  color: @purple;
+  font-size: 1.25em;
+  padding: 0em 0.5em 0em 0.5em;
+}
+#pulseaudio.micro {
+  color: @purple;
+  padding: 0em 0.5em 0em 0em;
+  font-size: 1.2em;
+}
+
+#backlight-slider,
+#pulseaudio-slider {
+  padding: 0em 2em 0em 1em;
+  background-color: @black3;
+}
+#backlight-slider slider,
+#pulseaudio-slider slider {
+  min-height: 5px;
+  min-width: 5px;
+  opacity: 100;
+  background-image: none;
+  border-radius: 3px;
+  box-shadow: 1px 5px 6px 1px #272727;
+}
+#backlight-slider trough,
+#pulseaudio-slider trough {
+  min-height: 5px;
+  min-width: 50px;
+  border-radius: 5px;
+  background-color: @grey;
+}
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+  min-width: 5px;
+  border-radius: 5px;
+}

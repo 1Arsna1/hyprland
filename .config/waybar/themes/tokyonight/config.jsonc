@@ -1,0 +1,56 @@
+[
+	{
+		"include": [
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc"
+		],
+		"mode": "dock",
+		"output": ["DP-1"],
+		"exclusive": true,
+		"passthrough": false,
+		"gtk-layer-shell": true,
+		"fixed-center": true,
+		"width": 1920,
+		"layer": "bottom",
+		"position": "top",
+		"reload_style_on_change": true,
+		"modules-left": ["custom/launcher", "group/percentage"],
+		"modules-center": ["group/hyprland"],
+		"modules-right": ["group/menu"]
+	},
+	{
+		"include": [
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc"
+		],
+		"mode": "dock",
+		"output": ["HDMI-A-1"],
+		"exclusive": true,
+		"passthrough": false,
+		"gtk-layer-shell": true,
+		"fixed-center": true,
+		"width": 1680,
+		"layer": "bottom",
+		"position": "top",
+		"reload_style_on_change": true,
+		"modules-left": ["custom/launcher", "group/percentage"],
+		"modules-center": ["group/hyprland"],
+		"modules-right": ["group/menu"]
+	},
+	{
+		"include": [
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc"
+		],
+		"mode": "dock",
+		"output": ["eDP-1"],
+		"exclusive": true,
+		"passthrough": false,
+		"gtk-layer-shell": true,
+		"fixed-center": true,
+		"width": 1920,
+		"layer": "bottom",
+		"position": "top",
+		"reload_style_on_change": true,
+		"modules-left": ["custom/launcher", "group/percentage#laptop"],
+		"modules-center": ["group/hyprland"],
+		"modules-right": ["group/menu"]
+	}
+]

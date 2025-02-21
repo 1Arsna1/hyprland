@@ -1,0 +1,77 @@
+#custom-expand {
+  padding: 0em 1em 0em 0.5em;
+  background-color: @black;
+  color: @green;
+  font-size: 1.35em;
+}
+#custom-connect {
+  padding: 0em 0.5em 0em 0.5em;
+}
+#custom-usages {
+  padding: 0em 0.25em 0em 0.25em;
+}
+#gamemode {
+  color: @green;
+  padding: 0em 0.25em 0em 0.5em;
+}
+#custom-usages,
+#custom-connect,
+#memory,
+#cpu,
+#disk,
+#temperature,
+#network,
+#bluetooth,
+#systemd-failed-units,
+#gamemode {
+  background-color: @black3;
+}
+#network {
+  padding: 0em 0em 0em 0em;
+  color: @green2;
+  font-size: 1.25em;
+}
+
+#bluetooth {
+  padding: 0em 0.5em 0em 0.25em;
+  font-size: 1.5em;
+  color: @blue3;
+}
+
+#custom-connect,
+#custom-usages {
+  color: @green;
+  font-size: 1.5em;
+}
+#systemd-failed-units {
+  padding: 0em 0.25em 0em 0em;
+  font-size: 2em;
+  color: @green;
+}
+
+#memory,
+#cpu,
+#temperature,
+#disk,
+#gamemode {
+  font-size: 1.25em;
+}
+
+#memory {
+  color: @orange;
+  padding: 0em 0em 0em 0.25em;
+}
+
+#cpu {
+  color: @purple;
+  padding: 0em 0.1em 0em 0em;
+}
+
+#temperature {
+  color: @red;
+}
+
+#disk {
+  color: @blue3;
+  padding: 0em 0.35em 0em 0em;
+}

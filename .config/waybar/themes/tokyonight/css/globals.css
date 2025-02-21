@@ -1,0 +1,59 @@
+@define-color black  #1f2335;
+@define-color black2  #24283b;
+@define-color black3  #292e42;
+@define-color grey  #3b4261;
+@define-color grey2  #414868;
+@define-color grey3  #545c7e;
+@define-color grey4  #565f89;
+@define-color grey5  #737aa2;
+@define-color white  #a9b1d6;
+@define-color white2  #c0caf5;
+@define-color blue  #394b70;
+@define-color blue2  #3d59a1;
+@define-color blue3  #7aa2f7;
+@define-color blue4  #7dcfff;
+@define-color teal  #b4f9f8;
+@define-color purple  #bb9af7;
+@define-color purple2  #9d7cd8;
+@define-color orange  #ff9e64;
+@define-color yellow  #ffc777;
+@define-color green  #c3e88d;
+@define-color green2  #4fd6be;
+@define-color green3  #41a6b5;
+@define-color red  #ff757f;
+@define-color red2  #c53b53;
+@define-color red3  #ff007c;
+* {
+  font-family: Hack Nerd Font Mono x;
+  font-weight: bold;
+  font-size: 12;
+}
+window#waybar {
+  background-color: @invisible;
+}
+
+#custom-endb2,
+#custom-endm2 {
+  font-size: 2.5em;
+  color: @black;
+  background-color: @black3;
+}
+#custom-endb,
+#custom-endm {
+  font-size: 2.5em;
+  color: @black;
+}
+
+tooltip {
+  background: @black;
+  opacity: 1;
+  border-radius: 1.5em;
+  border: 2px solid;
+  border-color: @blue3;
+}
+
+tooltip label {
+  padding: 0.5em;
+  font-size: 16px;
+  color: @blue;
+}

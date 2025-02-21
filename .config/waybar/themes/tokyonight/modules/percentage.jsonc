@@ -1,0 +1,65 @@
+{
+	"wireplumber": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": [" ", " ", " "],
+		"format-muted": "",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --dec",
+		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle"
+	},
+	"wireplumber#percent": {
+		"tooltip": false,
+		"format": "{volume}%",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --dec",
+		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle"
+	},
+	"pulseaudio/slider": {
+		"tooltip": false,
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	},
+	"pulseaudio#microphone": {
+		"tooltip": false,
+		"format": "{format_source}",
+		"format-source": "",
+		"format-source-muted": "",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle-mic",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-inc",
+		"scroll-step": 5
+	},
+	"pulseaudio#micro": {
+		"tooltip": false,
+		"format": "{format_source}",
+		"format-source": "{volume}%",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle-mic",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-dec",
+		"scroll-step": 5
+	},
+	"backlight": {
+		"tooltip": false,
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brigthness --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brigthness --dec",
+		"device": "intel_backlight",
+		"format": "{icon}",
+		"format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "]
+	},
+	"backlight#percent": {
+		"tooltip": false,
+		"device": "intel_backlight",
+		"format": "{percent}%"
+	},
+	"backlight/slider": {
+		"tooltip": false,
+		"device": "intel_backlight",
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	}
+}
