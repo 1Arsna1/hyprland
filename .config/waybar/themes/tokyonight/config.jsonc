@@ -1,7 +1,8 @@
 [
 	{
 		"include": [
-			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc"
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/main.jsonc"
 		],
 		"mode": "dock",
 		"output": ["DP-1"],
@@ -13,13 +14,14 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/percentage"],
+		"modules-left": ["custom/launcher", "group/percentage", "group/system"],
 		"modules-center": ["group/hyprland"],
 		"modules-right": ["group/menu"]
 	},
 	{
 		"include": [
-			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc"
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/main.jsonc"
 		],
 		"mode": "dock",
 		"output": ["HDMI-A-1"],
@@ -31,13 +33,14 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/percentage"],
+		"modules-left": ["custom/launcher", "group/percentage", "group/system"],
 		"modules-center": ["group/hyprland"],
 		"modules-right": ["group/menu"]
 	},
 	{
 		"include": [
-			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc"
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
+			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/main.jsonc"
 		],
 		"mode": "dock",
 		"output": ["eDP-1"],
@@ -49,7 +52,11 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/percentage#laptop"],
+		"modules-left": [
+			"custom/launcher",
+			"group/percentage#laptop",
+			"group/system"
+		],
 		"modules-center": ["group/hyprland"],
 		"modules-right": ["group/menu"]
 	}

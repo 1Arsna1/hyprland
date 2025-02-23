@@ -1,0 +1,81 @@
+{
+	"include": [
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/percentage.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/menu.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hyprland.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/custom.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/battery.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
+		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hardware.jsonc"
+	],
+	"group/menu": {
+		"orientation": "horizontal",
+		"tooltip": false,
+		"modules": [
+			"custom/endb",
+			"tray",
+			"privacy",
+			"keyboard-state",
+			"clock",
+			"custom/user",
+			"group/bat"
+		]
+	},
+	"group/percentage": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": false
+		},
+		"modules": [
+			"group/audio",
+			"custom/endm2",
+			"pulseaudio/slider",
+			"custom/endb2"
+		]
+	},
+	"group/percentage#laptop": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"modules": [
+			"backlight",
+			"group/light",
+			"custom/endm2",
+			"backlight/slider",
+			"custom/endb2",
+			"group/audio",
+			"custom/endm2",
+			"pulseaudio/slider",
+			"custom/endb2",
+			"pulseaudio#microphone",
+			"pulseaudio#micro",
+			"group/system"
+		]
+	},
+
+	"group/hardware": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": true,
+			"transition-duration": 500,
+			"transition-left-to-right": false
+		},
+		"modules": [
+			"custom/expand",
+			"custom/endm2",
+			"systemd-failed-units",
+			"gamemode",
+			"group/connections",
+			"group/usage",
+			"custom/endb2"
+		]
+	},
+	"group/system": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"modules": ["group/hardware", "custom/endm"]
+	}
+}
