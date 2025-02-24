@@ -8,8 +8,8 @@
 			"<span color='#c3e88d'>󰤥 </span>",
 			"<span color='#4fd6be'>󰤨 </span>"
 		],
-		"format-ethernet": "󰈀 ",
-		"format-disconnected": "", //An empty format will hide the module.
+		"format-ethernet": "<span color='#4fd6be'>󰈀 </span>",
+		"format-disconnected": "<span color='#ff007c'> </span>", //An empty format will hide the module.
 		"tooltip-format": "{ifname} via {gwaddr}",
 		"tooltip-format-wifi": "{essid}|{ipaddr}/{cidr} ({signalStrength}%)",
 		"tooltip-format-ethernet": "{ifname}|{ipaddr}/{cidr}",

@@ -27,8 +27,7 @@
 			"keyboard-state",
 			"clock",
 			"custom/user",
-			"battery",
-			"group/connections"
+			"battery"
 		]
 	},
 	"group/sound": {
