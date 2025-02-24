@@ -1,4 +1,9 @@
 {
+	"custom/connect": {
+		"tooltip": false,
+		"format": "{icon}",
+		"format-icons": " "
+	},
 	"custom/clipboard": {
 		"format": "{icon}",
 		"format-icons": "",
@@ -54,11 +59,6 @@
 		"format": "{icon}",
 		"tooltip": false,
 		"format-icons": " "
-	},
-	"custom/connect": {
-		"tooltip": false,
-		"format": "{icon}",
-		"format-icons": " "
 	},
 
 	"custom/endb": {

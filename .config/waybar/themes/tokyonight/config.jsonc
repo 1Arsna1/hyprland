@@ -14,9 +14,9 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/percentage", "group/system"],
+		"modules-left": ["custom/launcher", "group/sound", "group/system"],
 		"modules-center": ["group/hyprland"],
-		"modules-right": ["group/menu"]
+		"modules-right": ["group/menu", "group/connections"]
 	},
 	{
 		"include": [
@@ -33,7 +33,7 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/percentage", "group/system"],
+		"modules-left": ["custom/launcher", "group/sound", "group/system"],
 		"modules-center": ["group/hyprland"],
 		"modules-right": ["group/menu"]
 	},
@@ -54,7 +54,8 @@
 		"reload_style_on_change": true,
 		"modules-left": [
 			"custom/launcher",
-			"group/percentage#laptop",
+			"group/bright",
+			"group/sound",
 			"group/system"
 		],
 		"modules-center": ["group/hyprland"],

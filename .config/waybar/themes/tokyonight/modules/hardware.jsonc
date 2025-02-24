@@ -11,29 +11,6 @@
 		"tooltip": true,
 		"tooltip-format": "Games running: {count}"
 	},
-	"network": {
-		"format-wifi": "{icon}",
-		"format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
-		"format-ethernet": "󰈀 ",
-		"format-disconnected": "", //An empty format will hide the module.
-		"tooltip-format": "{ifname} via {gwaddr}",
-		"tooltip-format-wifi": "{essid}|{ipaddr}/{cidr} ({signalStrength}%)",
-		"tooltip-format-ethernet": "{ifname}|{ipaddr}/{cidr}",
-		"tooltip-format-disconnected": "Disconnected",
-		"max-length": 50,
-		"on-click": "ghostty --class=system.net -e nmtui"
-	},
-
-	"bluetooth": {
-		"format-on": "",
-		"format-connected": "󰂱",
-		"format-off": "󰂲",
-		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-		"on-click": "ghostty --class=system.blue -e bluetui"
-	},
 	"cpu": {
 		"interval": 10,
 		"format": "{}%  ",
@@ -63,8 +40,8 @@
 	},
 	"systemd-failed-units": {
 		"hide-on-ok": false, // Do not hide if there is zero failed units.
-		"format": "✗ {nr_failed}",
-		"format-ok": "✓",
+		"format": "<span color='#ff007c'>✗ {nr_failed}</span>",
+		"format-ok": "<span color='#4fd6be'>✓</span>",
 		"system": true, // Monitor failed systemwide units.
 		"user": true // Ignore failed user units.
 	}

@@ -3,11 +3,6 @@
 		"tooltip": false,
 		"children-class": "brightness",
 		"orientation": "horizontal",
-		"drawer": {
-			"transition-duration": 500,
-			"transition-left-to-right": true,
-			"click-to-reveal": false
-		},
 		"modules": ["backlight", "backlight#percent"]
 	},
 
@@ -16,16 +11,6 @@
 		"children-class": "audio",
 		"orientation": "horizontal",
 		"modules": ["wireplumber", "wireplumber#percent"]
-	},
-
-	"group/bat": {
-		"orientation": "horizontal",
-		"drawer": {
-			"click-to-reveal": false,
-			"transition-duration": 500,
-			"transition-left-to-right": false
-		},
-		"modules": ["battery", "upower"]
 	},
 
 	"group/hyprland": {
@@ -39,16 +24,7 @@
 			"custom/endm"
 		]
 	},
-	"group/connections": {
-		"tooltip": false,
-		"orientation": "horizontal",
-		"drawer": {
-			"click-to-reveal": true,
-			"transition-duration": 500,
-			"transition-left-to-right": true
-		},
-		"modules": ["custom/connect", "network", "bluetooth"]
-	},
+
 	"group/usage": {
 		"tooltip": false,
 		"orientation": "horizontal",
