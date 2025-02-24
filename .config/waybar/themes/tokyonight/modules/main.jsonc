@@ -15,7 +15,13 @@
 			"transition-left-to-right": false,
 			"click-to-reveal": true
 		},
-		"modules": ["custom/connect", "bluetooth", "network"]
+		"modules": [
+			"custom/connect",
+			"custom/endm2",
+			"bluetooth",
+			"network",
+			"custom/endb2"
+		]
 	},
 	"group/menu": {
 		"orientation": "horizontal",

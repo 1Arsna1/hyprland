@@ -29,11 +29,11 @@
 #network {
   padding: 0em 0em 0em 0em;
   font-size: 1.25em;
-  background-color: @bg;
+  background-color: @group-bg;
 }
 
 #bluetooth {
-  background-color: @bg;
+  background-color: @group-bg;
   padding: 0em 0.5em 0em 0.25em;
   font-size: 1.5em;
   color: @icons;
