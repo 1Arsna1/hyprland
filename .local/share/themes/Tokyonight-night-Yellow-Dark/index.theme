@@ -1,0 +1,12 @@
+Type=X-GNOME-Metatheme
+[Desktop Entry]
+Name=Tokyonight-night-Yellow-Dark
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Tokyonight-night-Yellow-Dark
+MetacityTheme=Tokyonight-night-Yellow-Dark
+IconTheme=Tela-circle-Dark
+CursorTheme=Tokyonight-night-cursors
+ButtonLayout=close,minimize,maximize:menu

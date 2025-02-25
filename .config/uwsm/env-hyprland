@@ -16,8 +16,8 @@ export HYPRLAND_TRACE=1
 #export __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json
 
 # GL_VRR
-#export __GLR_VRR_ALLOWED=1
-#export __GLR_VRR_ENABLED=1
+export __GLR_VRR_ALLOWED=1
+export __GLR_VRR_ENABLED=1
 
 # LIBVA
 #export LIBVA_DRIVER_NAME=nvidia
@@ -49,7 +49,7 @@ export CLUTTER_BACKEND=wayland
 export SDL_VIDEODRIVER=wayland,x11,windows
 export GDK_BACKEND=wayland,x11,*
 export QT_QPA_PLATFORM=wayland;xcb
-export QT_QPA_PLATFORMTHEME=gtk3
+export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export QT_WAYLAND_DECORATION=adwaita
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
@@ -67,14 +67,15 @@ export XDG_SESSION_DESKTOP=Hyprland
 export MOZ_ENABLE_WAYLAND=1
 
 #Nvidia
-#export WLR_DRM_NO_ATOMIC=0
+export WLR_DRM_NO_ATOMIC=0
 #export __VK_LAYER_NV_optimus=NVIDIA_only
 #export __NV_PRIME_RENDER_OFFLOAD=1
-#export __GL_GSYNC_ALLOWED=1
-#export GBM_BACKEND=nvidia-drm
-#export NVD_BACKEND=direct
-#export ELECTRON_OZONE_PLATFORM_HINT=auto
-#export MOZ_DISABLE_RDD_SANDBOX=1
+export __GL_GSYNC_ALLOWED=1
+export GBM_BACKEND=nvidia-drm
+export NVD_BACKEND=direct
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export MOZ_DISABLE_RDD_SANDBOX=1
+
 
 #Aquamarine
 #export AQ_DRM_DEVICES=/dev/dri/card1:/dev/dri/card0
