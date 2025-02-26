@@ -5,7 +5,7 @@ export XCURSOR_SIZE=24
 export XCURSOR_THEME=Silver-Wolf
 # export HYPRLAND_LOG_WLR=1
 # export HYPRLAND_NO_RT=0
-#export GTK_THEME=Tokyonight-Purple-Dark-Moon
+export GTK_THEME=Tokyonight-night-Dark
 #export HYPRLAND_NO_SD_NOTIFY=0
 export HYPRLAND_TRACE=1
 
