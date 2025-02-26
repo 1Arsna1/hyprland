@@ -4,9 +4,7 @@
   font-size: 1.45em;
   background-color: @bg;
 }
-
 #backlight,
-#backlight.percent,
 #wireplumber,
 #pulseaudio {
   background-color: @bg;
@@ -14,35 +12,28 @@
 #backlight {
   color: @yellow;
   font-size: 1.25em;
-  padding: 0em 0em 0em 0.5em;
-}
-#backligh.percent {
-  padding: 0em 0.5em 0em 0em;
-  font-size: 1.2em;
+  padding: 0em 0.2em 0em 0.5em;
 }
 #wireplumber {
   color: @icons;
   font-size: 1.25em;
-  padding: 0em 0.5em 0em 1em;
+  padding: 0em 0em 0em 0.5em;
 }
 #wireplumber.muted {
   color: @alt;
   font-size: 1.25em;
-  padding: 0em 1em 0em 1em;
+  padding: 0em 1em 0em 0.5em;
 }
+#backlight.percent,
 #wireplumber.percent {
   padding: 0em 0.5em 0em 0em;
   font-size: 1.2em;
 }
-#pulseaudio.microphone {
-  color: @purple;
-  font-size: 1.25em;
-  padding: 0em 0.5em 0em 0.5em;
-}
+#pulseaudio.microphone,
 #pulseaudio.micro {
   color: @purple;
-  padding: 0em 0.5em 0em 0em;
   font-size: 1.2em;
+  padding: 0em 0.25em 0em 0.25em;
 }
 
 #backlight-slider,

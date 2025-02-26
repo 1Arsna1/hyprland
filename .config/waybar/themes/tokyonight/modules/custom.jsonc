@@ -1,4 +1,27 @@
 {
+	"custom/next": {
+		"format": "{icon}",
+		"on-click": "playerctl next",
+		"format-icons": " "
+	},
+	"custom/last": {
+		"format": "{icon} ",
+		"on-click": "playerctl previous",
+		"format-icons": " "
+	},
+	"custom/music": {
+		"format": "{icon}{0}",
+		"format-icons": {
+			// "Playing": " ", // Uncomment if not using the dynamic script
+			"Paused": " ",
+			"Stopped": "&#x202d;ﭥ " // This stop symbol is RTL. So &#x202d; is left-to-right override.
+		},
+		"escape": true,
+		"tooltip": true,
+		"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/caway",
+		"on-click": "playerctl play-pause",
+		"max-length": 35
+	},
 	"custom/connect": {
 		"tooltip": false,
 		"format": "{icon}",

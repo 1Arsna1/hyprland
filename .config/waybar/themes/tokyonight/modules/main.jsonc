@@ -24,6 +24,16 @@
 			"custom/endb2"
 		]
 	},
+	"group/media": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/endb",
+			"custom/last",
+			"custom/music",
+			"custom/next",
+			"custom/endm"
+		]
+	},
 	"group/menu": {
 		"orientation": "horizontal",
 		"tooltip": false,
@@ -51,6 +61,10 @@
 			"pulseaudio/slider",
 			"custom/endb2"
 		]
+	},
+	"group/volume": {
+		"orientation": "horizontal",
+		"modules": ["group/sound", "pulseaudio#microphone", "pulseaudio#micro"]
 	},
 	"group/bright": {
 		"tooltip": false,

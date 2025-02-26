@@ -1,0 +1,19 @@
+#network {
+  padding: 0em 0.25em 0em 0.5em;
+  font-size: 1.25em;
+  color: @icons;
+  background-color: @group-bg;
+}
+
+#bluetooth {
+  background-color: @group-bg;
+  padding: 0em 0.5em 0em 0.25em;
+  font-size: 1.5em;
+  color: @icons;
+}
+#custom-connect {
+  padding: 0em 0.5em 0em 0.5em;
+  background-color: @bg;
+  color: @drawer;
+  font-size: 1.5em;
+}

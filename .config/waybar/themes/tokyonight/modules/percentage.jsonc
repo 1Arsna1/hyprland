@@ -4,18 +4,18 @@
 		"format": "{icon}",
 		"format-icons": [" ", " ", " "],
 		"format-muted": "",
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --dec",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --dec",
 		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
-		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle"
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle"
 	},
 	"wireplumber#percent": {
 		"tooltip": false,
 		"format": "{volume}%",
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --dec",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --dec",
 		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
-		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle"
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle"
 	},
 	"pulseaudio/slider": {
 		"tooltip": false,
@@ -27,31 +27,33 @@
 		"tooltip": false,
 		"format": "{format_source}",
 		"format-source": "",
-		"format-source-muted": "",
-		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle-mic",
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-inc",
+		"format-source-muted": " ",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle-mic",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
 		"scroll-step": 5
 	},
 	"pulseaudio#micro": {
 		"tooltip": false,
 		"format": "{format_source}",
 		"format-source": "{volume}%",
-		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/volume --toggle-mic",
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/volume --mic-dec",
+		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle-mic",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-dec",
 		"scroll-step": 5
 	},
 	"backlight": {
 		"tooltip": false,
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brigthness --inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brigthness --dec",
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --dec",
 		"device": "intel_backlight",
 		"format": "{icon}",
 		"format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "]
 	},
 	"backlight#percent": {
 		"tooltip": false,
+		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --inc",
+		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --dec",
 		"device": "intel_backlight",
 		"format": "{percent}%"
 	},

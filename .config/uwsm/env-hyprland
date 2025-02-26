@@ -2,9 +2,9 @@
 export HYPRCURSOR_SIZE=24
 export HYPRCURSOR_THEME=Silver-Wolf-Hypr
 export XCURSOR_SIZE=24
-export XCURSOR_THEME=Silver-Wolf
-# export HYPRLAND_LOG_WLR=1
-# export HYPRLAND_NO_RT=0
+export XCURSOR_THEME=Silver-Wolf-xorg
+#export HYPRLAND_LOG_WLR=1
+#export HYPRLAND_NO_RT=0
 #export GTK_THEME=Tokyonight-Purple-Dark-Moon
 #export HYPRLAND_NO_SD_NOTIFY=0
 export HYPRLAND_TRACE=1
@@ -16,8 +16,8 @@ export HYPRLAND_TRACE=1
 #export __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json
 
 # GL_VRR
-# export __GLR_VRR_ALLOWED=1
-# export __GLR_VRR_ENABLED=1
+#export __GLR_VRR_ALLOWED=1
+#export __GLR_VRR_ENABLED=1
 
 # LIBVA
 #export LIBVA_DRIVER_NAME=nvidia
@@ -28,9 +28,9 @@ export HYPRLAND_TRACE=1
 #export VDPAU_DRIVER=radeonsi
 
 # OpenGL
-# export LIBGL_ALWAYS_SOFTWARE=1
+#export LIBGL_ALWAYS_SOFTWARE=1
 #export MESA_LOADER_DRIVER_OVERRIDE=radeonsi
-# export GALLIUM_DRIVER=llvmpipe
+#export GALLIUM_DRIVER=llvmpipe
 
 # Vulkan
 #export ENABLE_DEVICE_CHOOSER_LAYER=1
@@ -63,14 +63,14 @@ export XDG_SESSION_DESKTOP=Hyprland
 export MOZ_ENABLE_WAYLAND=1
 
 #Nvidia
-# export WLR_DRM_NO_ATOMIC=0
-#export __VK_LAYER_NV_optimus=NVIDIA_only
-#export __NV_PRIME_RENDER_OFFLOAD=1
-# export __GL_GSYNC_ALLOWED=1
-# export GBM_BACKEND=nvidia-drm
-# export NVD_BACKEND=direct
-# export ELECTRON_OZONE_PLATFORM_HINT=auto
-# export MOZ_DISABLE_RDD_SANDBOX=1
+export WLR_DRM_NO_ATOMIC=0
+export __VK_LAYER_NV_optimus=NVIDIA_only
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __GL_GSYNC_ALLOWED=1
+export GBM_BACKEND=nvidia-drm
+export NVD_BACKEND=direct
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export MOZ_DISABLE_RDD_SANDBOX=1
 
 
 #Aquamarine

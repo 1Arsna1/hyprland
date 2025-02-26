@@ -11,6 +11,7 @@
 }
 #workspaces button.active {
   border-radius: 2em;
+  border: 2px solid;
   border-color: @text;
   color: @yellow;
 }
