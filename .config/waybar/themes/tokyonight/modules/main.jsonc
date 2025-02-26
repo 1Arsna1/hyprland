@@ -8,49 +8,24 @@
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/hardware.jsonc",
 		"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/connections.jsonc"
 	],
-	"group/connections": {
-		"tooltip": false,
-		"orientation": "horizontal",
-		"drawer": {
-			"transition-duration": 500,
-			"transition-left-to-right": false,
-			"click-to-reveal": true
-		},
-		"modules": [
-			"custom/connect",
-			"custom/endm2",
-			"bluetooth",
-			"network",
-			"custom/endb2"
-		]
-	},
+
 	"group/menu": {
 		"orientation": "horizontal",
 		"tooltip": false,
 		"modules": [
 			"custom/endb",
+			"group/connections",
 			"tray",
 			"privacy",
 			"keyboard-state",
 			"clock",
-			"custom/user",
 			"battery"
 		]
 	},
-	"group/sound": {
-		"tooltip": false,
+
+	"group/volume": {
 		"orientation": "horizontal",
-		"drawer": {
-			"transition-duration": 500,
-			"transition-left-to-right": true,
-			"click-to-reveal": false
-		},
-		"modules": [
-			"group/audio",
-			"custom/endm2",
-			"pulseaudio/slider",
-			"custom/endb2"
-		]
+		"modules": ["group/sound", "pulseaudio#microphone", "pulseaudio#micro"]
 	},
 	"group/bright": {
 		"tooltip": false,
@@ -67,24 +42,31 @@
 			"custom/endb2"
 		]
 	},
-
-	"group/hardware": {
+	"group/hyprland": {
 		"tooltip": false,
 		"orientation": "horizontal",
-		"drawer": {
-			"click-to-reveal": true,
-			"transition-duration": 500,
-			"transition-left-to-right": false
-		},
 		"modules": [
-			"custom/expand",
-			"custom/endm2",
-			"systemd-failed-units",
-			"gamemode",
-			"group/usage",
-			"custom/endb2"
+			"custom/endb",
+			"custom/stackoverflow",
+			"hyprland/workspaces",
+			"custom/user",
+			"custom/endm"
 		]
 	},
+	"group/launcher": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/launcher",
+			"custom/clipboard",
+			"custom/wall",
+			"custom/endb"
+		]
+	},
+	"group/media": {
+		"orientation": "horizontal",
+		"modules": ["custom/endm", "custom/last", "custom/music", "custom/next"]
+	},
+
 	"group/system": {
 		"tooltip": false,
 		"orientation": "horizontal",

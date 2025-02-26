@@ -1,4 +1,5 @@
 @define-color bg  #15161e;
+@define-color invisible  rgba(0, 0, 0, 0);
 @define-color group-bg  #222436;
 @define-color drawer  #c3e88d;
 @define-color icons  #7aa2f7;
@@ -7,7 +8,7 @@
 @define-color alt  #ff007c;
 @define-color black #1f2335;
 @define-color grey  #3b4261;
-@define-color blue  #27A1B9;
+@define-color blue  #2D3F76;
 @define-color teal  #7dcfff;
 @define-color purple  #bb9af7;
 @define-color orange  #ff9e64;
@@ -21,16 +22,21 @@
 window#waybar {
   background-color: @invisible;
 }
-
+#custom-endm3,
+#custom-endb3 {
+  font-size: 2.4em;
+  color: @bg;
+}
 #custom-endb2,
 #custom-endm2 {
-  font-size: 2.5em;
+  font-size: 2.4em;
   color: @bg;
   background-color: @group-bg;
 }
 #custom-endb,
 #custom-endm {
-  font-size: 2.5em;
+  font-size: 2.4em;
+  text-shadow: 0 0 0px @black;
   color: @bg;
 }
 
@@ -46,4 +52,37 @@ tooltip label {
   padding: 0.5em;
   font-size: 16px;
   color: @text;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 30%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient_f {
+  0% {
+    background-position: 0% 200%;
+  }
+  50% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 400% 200%;
+  }
+}
+
+@keyframes gradient_f_nh {
+  0% {
+    background-position: 0% 200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
 }

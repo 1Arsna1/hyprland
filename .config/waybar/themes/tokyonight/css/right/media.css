@@ -1,0 +1,21 @@
+#media {
+  background: @bg;
+  background: linear-gradient(
+    45deg,
+    @black 20%,
+    @grey 40%,
+    @blue 60%,
+    @icons 80%,
+    @text 100%
+  );
+  background-size: 300% 300%;
+  text-shadow: 0 0 5px @black;
+  animation: gradient 15s linear infinite;
+  color: @teal;
+}
+#custom-next {
+  padding: 0em 1.5em 0em 1.2em;
+}
+#custom-last {
+  padding: 0em 0.5em 0em 1em;
+}

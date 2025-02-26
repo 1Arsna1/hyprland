@@ -1,4 +1,25 @@
 {
+	"custom/wall": {
+		"format": "{icon}",
+		"format-icons": " "
+	},
+	"custom/next": {
+		"format": "{icon}",
+		"on-click": "playerctl next",
+		"format-icons": ""
+	},
+	"custom/last": {
+		"format": "{icon} ",
+		"on-click": "playerctl previous",
+		"format-icons": ""
+	},
+	"custom/music": {
+		"escape": true,
+		"tooltip": true,
+		"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/cava",
+		"on-click": "playerctl play-pause",
+		"max-length": 25
+	},
 	"custom/connect": {
 		"tooltip": false,
 		"format": "{icon}",
@@ -75,40 +96,8 @@
 		"format": "",
 		"tooltip": false
 	},
-	"custom/endb3": {
-		"format": "",
-		"tooltip": false
-	},
 	"custom/endm2": {
 		"format": "",
 		"tooltip": false
-	},
-
-	//"custom/endt": {
-	//	"format": "",
-	//	"tooltip": false
-	//},
-	//"custom/endn": {
-	//	"format": "",
-	//	"tooltip": false
-	//},
-
-	"custom/slash": {
-		"format": "󰿟",
-		"tooltip": false
-	},
-	"custom/smaller": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/bigger": {
-		"format": "",
-		"tooltip": false
-	},
-
-	// waybar cava ( haven't add in the waybar )
-	"custom/cava": {
-		"exec": "~/.config/hypr/scripts/cava",
-		"framerate": 60
 	}
 }

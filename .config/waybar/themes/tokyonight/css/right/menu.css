@@ -1,0 +1,27 @@
+#clock,
+#keyboard-state,
+#privacy,
+#tray,
+#battery,
+#upower {
+  background-color: @bg;
+  padding: 0em 0.5em 0em 0.25em;
+}
+
+#tray menu {
+  border: initial;
+}
+#privacy {
+  color: @green;
+}
+#keyboard-state {
+}
+#clock {
+  font-size: 1.3em;
+  color: @text;
+}
+
+#battery {
+  font-size: 1.25em;
+  color: @text;
+}

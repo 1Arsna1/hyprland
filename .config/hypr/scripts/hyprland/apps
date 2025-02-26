@@ -5,6 +5,7 @@ killall waybar
 killall swaync
 killall swww
 killall hyprsunset
+killall cava
 $UWSM waybar &
 $UWSM swaync &
 $UWSM swww-daemon &

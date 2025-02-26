@@ -1,9 +1,58 @@
 {
+	"group/connections": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"custom/connect",
+			"custom/endm2",
+			"bluetooth",
+			"network",
+			"custom/endb2"
+		]
+	},
+	"group/hardware": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": true,
+			"transition-duration": 500,
+			"transition-left-to-right": false
+		},
+		"modules": [
+			"custom/expand",
+			"custom/endm2",
+			"systemd-failed-units",
+			"gamemode",
+			"group/usage",
+			"custom/endb2"
+		]
+	},
+
 	"group/light": {
 		"tooltip": false,
 		"children-class": "brightness",
 		"orientation": "horizontal",
 		"modules": ["backlight", "backlight#percent"]
+	},
+	"group/sound": {
+		"tooltip": false,
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": false
+		},
+		"modules": [
+			"group/audio",
+			"custom/endm2",
+			"pulseaudio/slider",
+			"custom/endb2"
+		]
 	},
 
 	"group/audio": {
@@ -11,18 +60,6 @@
 		"children-class": "audio",
 		"orientation": "horizontal",
 		"modules": ["wireplumber", "wireplumber#percent"]
-	},
-
-	"group/hyprland": {
-		"tooltip": false,
-		"orientation": "horizontal",
-		"modules": [
-			"custom/endb",
-			"custom/clipboard",
-			"hyprland/workspaces",
-			"custom/stackoverflow",
-			"custom/endm"
-		]
 	},
 
 	"group/usage": {

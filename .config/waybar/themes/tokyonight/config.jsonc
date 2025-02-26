@@ -14,9 +14,9 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/sound", "group/system"],
+		"modules-left": ["group/launcher", "group/volume", "group/system"],
 		"modules-center": ["group/hyprland"],
-		"modules-right": ["group/menu", "group/connections"]
+		"modules-right": ["group/menu", "group/media"]
 	},
 	{
 		"include": [
@@ -33,10 +33,11 @@
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
-		"modules-left": ["custom/launcher", "group/sound", "group/system"],
+		"modules-left": ["group/launcher", "group/volume", "group/system"],
 		"modules-center": ["group/hyprland"],
-		"modules-right": ["group/menu", "group/connections"]
+		"modules-right": ["group/menu", "group/media"]
 	},
+
 	{
 		"include": [
 			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
@@ -53,12 +54,12 @@
 		"position": "top",
 		"reload_style_on_change": true,
 		"modules-left": [
-			"custom/launcher",
+			"group/launcher",
 			"group/bright",
-			"group/sound",
+			"group/volume",
 			"group/system"
 		],
 		"modules-center": ["group/hyprland"],
-		"modules-right": ["group/menu", "group/connections"]
+		"modules-right": ["group/menu", "group/media"]
 	}
 ]

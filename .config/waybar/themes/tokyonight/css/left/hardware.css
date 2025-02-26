@@ -50,9 +50,10 @@
 
 #temperature {
   color: @red;
+  padding: 0em 0.35em 0em 0.2em;
 }
 
 #disk {
   color: @icons;
-  padding: 0em 0.35em 0em 0em;
+  padding: 0em 0.35em 0em 0.35em;
 }

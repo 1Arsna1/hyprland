@@ -1,0 +1,40 @@
+#launcher {
+  font-size: 1.45em;
+  background: @bg;
+  background: linear-gradient(
+    45deg,
+    @black 20%,
+    @grey 40%,
+    @blue 60%,
+    @icons 80%,
+    @text 100%
+  );
+  background-size: 300% 300%;
+  text-shadow: 0 0 5px @black;
+  animation: gradient 15s linear infinite;
+  color: @teal;
+}
+
+#custom-clipboard {
+  font-size: 1.5em;
+  padding: 0em 1em 0em 0.5em;
+}
+#custom-launcher {
+  padding: 0em 0.5em 0em 1em;
+  font-size: 1.5em;
+}
+
+#custom-wall {
+  padding: 4px 4px 4px 7px;
+  background-color: @bg;
+  color: @bg;
+  margin: 5px;
+  border-radius: 2em;
+}
+
+#custom-wall:hover {
+  background-color: @bg;
+  color: @invisible;
+  padding: 0 12px;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
