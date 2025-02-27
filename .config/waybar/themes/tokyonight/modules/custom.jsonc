@@ -1,7 +1,18 @@
 {
+	"custom/weather": {
+		"format": "<span font='16'></span>",
+		"format-alt": "{alt}:{}",
+		"format-alt-click": "click",
+		"interval": 3600,
+		"return-type": "json",
+		"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/Weather.py",
+		//"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/weather",
+		"exec-if": "ping wttr.in -c1",
+		"tooltip": true
+	},
 	"custom/wall": {
 		"format": "{icon}",
-		"format-icons": " "
+		"format-icons": ""
 	},
 	"custom/next": {
 		"format": "{icon}",
@@ -9,7 +20,7 @@
 		"format-icons": ""
 	},
 	"custom/last": {
-		"format": "{icon} ",
+		"format": "{icon}",
 		"on-click": "playerctl previous",
 		"format-icons": ""
 	},
@@ -18,12 +29,12 @@
 		"tooltip": true,
 		"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/cava",
 		"on-click": "playerctl play-pause",
-		"max-length": 25
+		"max-length": 35
 	},
 	"custom/connect": {
 		"tooltip": false,
 		"format": "{icon}",
-		"format-icons": " "
+		"format-icons": ""
 	},
 	"custom/clipboard": {
 		"format": "{icon}",
@@ -31,37 +42,30 @@
 		"tooltip": false
 	},
 	"custom/stackoverflow": {
-		"format": "{icon}",
+		"format": "<span font='16'>{icon}</span>",
 		"format-icons": "󱢇",
 		"on-click": "xdg-open https://stackoverflow.com"
 	},
 	"custom/launcher": {
 		"format": "{icon}",
-		"format-icons": "󰣇 ",
+		"format-icons": "󰣇",
 		"on-click": "uwsm app -- $(tofi-drun)",
 		"tooltip": false
 	},
 	"custom/user": {
 		"tooltip": true,
 		"tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
-		"format": "{} {icon} ",
+		"format": "{} {icon}",
 		"format-icons": {
-			"notification": "<span foreground='#ff007c'><sup></sup></span>",
-			"dnd": "",
-			"none": "",
-			"dnd-notification": "<span foreground='#ff007c'><sup></sup></span>",
-			"dnd-none": "",
-			"inhibited-notification": "<span foreground='#ff007c'><sup></sup></span>",
-			"inhibited-none": "",
-			"dnd-inhibited-notification": "<span foreground='#ff007c'><sup></sup></span>",
-			"dnd-inhibited-none": "",
-			"email-notification": "<span foreground='white'><sup></sup></span>",
-			"chat-notification": "󱋊<span foreground='white'><sup></sup></span>",
-			"warning-notification": "󱨪<span foreground='yellow'><sup></sup></span>",
-			"error-notification": "󱨪<span foreground='red'><sup></sup></span>",
-			"network-notification": "󱂇<span foreground='white'><sup></sup></span>",
-			"battery-notification": "󰁺<span foreground='white'><sup></sup></span>",
-			"update-notification": "󰚰<span foreground='white'><sup></sup></span>"
+			"notification": "<span font='16'></span><span foreground='#ff007c'><sup></sup></span>",
+			"dnd": "<span font='16'></span>",
+			"none": "<span font='16'></span>",
+			"dnd-notification": "<span font='16'></span><span foreground='#ff007c'><sup></sup></span>",
+			"dnd-none": "<span font='16'></span>",
+			"inhibited-notification": "<span font='16'></span><span foreground='#ff007c'><sup></sup></span>",
+			"inhibited-none": "<span font='16'></span>",
+			"dnd-inhibited-notification": "<span font='16'></span><span foreground='#ff007c'><sup></sup></span>",
+			"dnd-inhibited-none": "<span font='16'></span>"
 		},
 		"return-type": "json",
 		"exec-if": "which swaync-client",
@@ -79,7 +83,7 @@
 	"custom/usages": {
 		"format": "{icon}",
 		"tooltip": false,
-		"format-icons": " "
+		"format-icons": ""
 	},
 
 	"custom/endb": {

@@ -1,5 +1,4 @@
 #workspaces {
-  padding: 0em 0.5em 0em 0.5em;
   background-color: @bg;
 }
 #workspaces button {
@@ -10,20 +9,15 @@
   color: @grey;
 }
 #workspaces button.active {
-  border-radius: 2em;
-  border: 2px solid;
-  border-color: @text;
   color: @yellow;
 }
 #custom-stackoverflow {
-  font-size: 1.25em;
-  padding: 0em 0.5em 0em 1em;
   color: @red;
   background-color: @bg;
+  padding: 0em 1em 0em 0.5em;
 }
 #custom-user {
+  padding: 0em 1em 0em 0.5em;
   color: @text;
-  padding: 0em 1em 0em 0.25em;
-  font-size: 1.25em;
   background-color: @bg;
 }

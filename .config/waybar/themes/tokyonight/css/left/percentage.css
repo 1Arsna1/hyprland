@@ -1,33 +1,22 @@
 #backlight,
 #wireplumber,
-#pulseaudio {
+#pulseaudio,
+#pulseaudio.microphone {
   background-color: @bg;
+  padding: 0em 0.5em 0em 1em;
 }
+
 #backlight {
   color: @yellow;
-  font-size: 1.25em;
-  padding: 0em 0.2em 0em 0.5em;
 }
 #wireplumber {
   color: @icons;
-  font-size: 1.25em;
-  padding: 0em 0em 0em 0.5em;
 }
 #wireplumber.muted {
   color: @alt;
-  font-size: 1.25em;
-  padding: 0em 1em 0em 0.5em;
 }
-#backlight.percent,
-#wireplumber.percent {
-  padding: 0em 0.5em 0em 0em;
-  font-size: 1.2em;
-}
-#pulseaudio.microphone,
-#pulseaudio.micro {
+#pulseaudio.microphone {
   color: @purple;
-  font-size: 1.2em;
-  padding: 0em 0.25em 0em 0.25em;
 }
 
 #backlight-slider,

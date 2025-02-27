@@ -32,13 +32,6 @@
 			"custom/endb2"
 		]
 	},
-
-	"group/light": {
-		"tooltip": false,
-		"children-class": "brightness",
-		"orientation": "horizontal",
-		"modules": ["backlight", "backlight#percent"]
-	},
 	"group/sound": {
 		"tooltip": false,
 		"orientation": "horizontal",
@@ -48,18 +41,11 @@
 			"click-to-reveal": false
 		},
 		"modules": [
-			"group/audio",
+			"wireplumber",
 			"custom/endm2",
 			"pulseaudio/slider",
 			"custom/endb2"
 		]
-	},
-
-	"group/audio": {
-		"tooltip": false,
-		"children-class": "audio",
-		"orientation": "horizontal",
-		"modules": ["wireplumber", "wireplumber#percent"]
 	},
 
 	"group/usage": {

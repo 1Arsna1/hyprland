@@ -12,10 +12,10 @@ do
 done
 
 # write cava config
-config_file="$XDG_CACHE_HOME/waycava"
+config_file="/tmp/waybarbar_cava_config"
 echo "
 [general]
-bars = 5
+bars = 6
 framerate = 60
 
 [input]
@@ -28,9 +28,6 @@ raw_target = /dev/stdout
 data_format = ascii
 bit_format = 16bit
 ascii_max_range = 7
-[smoothing]
-monstercat = 1
-waves = 1
 " > $config_file
 
 # read stdout from cava

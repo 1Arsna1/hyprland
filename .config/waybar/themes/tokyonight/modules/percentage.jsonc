@@ -1,17 +1,9 @@
 {
 	"wireplumber": {
 		"tooltip": false,
-		"format": "{icon}",
-		"format-icons": [" ", " ", " "],
-		"format-muted": "",
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --dec",
-		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
-		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle"
-	},
-	"wireplumber#percent": {
-		"tooltip": false,
-		"format": "{volume}%",
+		"format": "<span font='18'>{icon}</span> {volume}%",
+		"format-icons": ["", "", ""],
+		"format-muted": "<span font='18'></span> {volume}%",
 		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --inc",
 		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --dec",
 		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
@@ -26,17 +18,8 @@
 	"pulseaudio#microphone": {
 		"tooltip": false,
 		"format": "{format_source}",
-		"format-source": "",
-		"format-source-muted": " ",
-		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle-mic",
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
-		"scroll-step": 5
-	},
-	"pulseaudio#micro": {
-		"tooltip": false,
-		"format": "{format_source}",
-		"format-source": "{volume}%",
+		"format-source": "<span font='18'></span> {volume}%",
+		"format-source-muted": "<span font='18'></span> {volume}%",
 		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle-mic",
 		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
 		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-dec",
@@ -47,21 +30,7 @@
 		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --inc",
 		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --dec",
 		"device": "intel_backlight",
-		"format": "{icon}",
-		"format-icons": ["󰃞 ", "󰃟 ", "󰃝 ", "󰃠 "]
-	},
-	"backlight#percent": {
-		"tooltip": false,
-		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --inc",
-		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/brigthness --dec",
-		"device": "intel_backlight",
-		"format": "{percent}%"
-	},
-	"backlight/slider": {
-		"tooltip": false,
-		"device": "intel_backlight",
-		"min": 0,
-		"max": 100,
-		"orientation": "horizontal"
+		"format": "<span font='18'>{icon}</span> {percent}%",
+		"format-icons": ["󰃞", "󰃟", "󰃝", "󰃠"]
 	}
 }

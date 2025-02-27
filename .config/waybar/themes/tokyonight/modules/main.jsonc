@@ -16,16 +16,16 @@
 			"custom/endb",
 			"group/connections",
 			"tray",
-			"privacy",
 			"keyboard-state",
 			"clock",
+			"custom/weather",
 			"battery"
 		]
 	},
 
 	"group/volume": {
 		"orientation": "horizontal",
-		"modules": ["group/sound", "pulseaudio#microphone", "pulseaudio#micro"]
+		"modules": ["group/sound", "pulseaudio#microphone"]
 	},
 	"group/bright": {
 		"tooltip": false,
@@ -35,12 +35,7 @@
 			"click-to-reveal": false
 		},
 		"orientation": "horizontal",
-		"modules": [
-			"group/light",
-			"custom/endm2",
-			"backlight/slider",
-			"custom/endb2"
-		]
+		"modules": ["backlight", "custom/endm2", "backlight/slider", "custom/endb2"]
 	},
 	"group/hyprland": {
 		"tooltip": false,

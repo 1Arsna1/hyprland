@@ -6,21 +6,21 @@
 		"design-capacity": false,
 		"states": {
 			"good": 95,
-			"warning": 30,
+			"warning": 18,
 			"critical": 15
 		},
-		"format": "{icon} {capacity}%",
-		"format-charging": " {capacity}%",
-		"format-plugged": "󱘖 {capacity}%",
+		"format": "{capacity}% <span font='18'>{icon}</span>",
+		"format-charging": "{capacity}% <span font='18'></span>",
+		"format-plugged": "{capacity}% <span font='18'>󱘖</span>",
 		"format-alt-click": "click",
-		"format-full": "{icon} Full",
-		"format-alt": "{icon} {time}",
+		"format-full": "Full <span font='18'>{icon}</span>",
+		"format-alt": "{time} <span font='18'>{icon}</span>",
 		"format-icons": [
-			"<span color='#ff007c'>  </span>",
-			"<span color='#ff757f'>  </span>",
-			"<span color='#ff9e64'>  </span>",
-			"<span color='#c3e88d'>  </span>",
-			"<span color='#4fd6be'>  </span>"
+			"<span color='#ff007c'font='18'></span>",
+			"<span color='#ff757f'font='18'></span>",
+			"<span color='#ff9e64'font='18'></span>",
+			"<span color='#c3e88d'font='18'></span>",
+			"<span color='#4fd6be'font='18'></span>"
 		],
 		"format-time": "{H}h {M}min",
 		"tooltip": true,
@@ -50,39 +50,17 @@
 		"numlock": true,
 		"capslock": true,
 		"format": {
-			"numlock": "<span color='#7dcfff' font='10'></span>  {icon} ",
-			"capslock": "<span color='#7dcfff' font='10'></span>  {icon} "
+			"numlock": "<span color='#7dcfff'font='12'></span> {icon}",
+			"capslock": "<span color='#7dcfff'font='12'></span> {icon}"
 		},
 		"format-icons": {
-			"locked": "<span color='#c0caf5' font='10'></span> ",
-			"unlocked": "<span color='#c0caf5' font='10'></span> "
+			"locked": "<span color='#c0caf5'font='12'></span> ",
+			"unlocked": "<span color='#c0caf5'font='12'></span> "
 		}
 	},
 	"tray": {
-		"spacing": 10,
-		"icon-size": 16,
-		"show-passive-items": "true"
-	},
-	"privacy": {
-		"icon-spacing": 10,
+		"spacing": 5,
 		"icon-size": 14,
-		"transition-duration": 250,
-		"modules": [
-			{
-				"type": "screenshare",
-				"tooltip": true,
-				"tooltip-icon-size": 24
-			},
-			{
-				"type": "audio-out",
-				"tooltip": true,
-				"tooltip-icon-size": 24
-			},
-			{
-				"type": "audio-in",
-				"tooltip": true,
-				"tooltip-icon-size": 24
-			}
-		]
+		"show-passive-items": "true"
 	}
 }

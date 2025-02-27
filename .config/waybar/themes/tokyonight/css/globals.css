@@ -8,16 +8,16 @@
 @define-color alt  #ff007c;
 @define-color black #1f2335;
 @define-color grey  #3b4261;
-@define-color blue  #2D3F76;
+@define-color blue  #27A1B9;
 @define-color teal  #7dcfff;
 @define-color purple  #bb9af7;
 @define-color orange  #ff9e64;
 @define-color yellow  #ffc777;
 @define-color red  #ff757f;
 * {
-  font-family: Hack Nerd Font Mono x;
+  font-family: Hack Nerd Font Mono;
   font-weight: bold;
-  font-size: 12;
+  font-size: 12px;
 }
 window#waybar {
   background-color: @invisible;

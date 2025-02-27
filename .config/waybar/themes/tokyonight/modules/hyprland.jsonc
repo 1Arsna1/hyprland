@@ -3,7 +3,7 @@
 		"tooltip": false,
 		"active-only": false,
 		"all-outputs": true,
-		"format": "{icon}",
+		"format": "<span font='14'>{icon}</span>",
 		"on-click": "activate",
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
 		"on-scroll-down": "hyprctl dispatch workspace e-1",
