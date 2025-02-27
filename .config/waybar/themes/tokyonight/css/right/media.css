@@ -2,10 +2,10 @@
   background: @bg;
   background: linear-gradient(
     45deg,
-    @black 20%,
-    @grey 40%,
-    @blue 60%,
-    @icons 80%,
+    @blue 20%,
+    @icons 40%,
+    @purple 60%,
+    @grey 80%,
     @text 100%
   );
   background-size: 300% 300%;

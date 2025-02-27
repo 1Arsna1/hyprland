@@ -9,7 +9,7 @@
 #### Dependencies
 
 1. Base Dependencies
-   |kvantum kvantum-qt5 qt5 qt6 qt5-base qt6-base qt5-wayland qt6-wayland nerd-fonts gtk-engines gtk-engine-murrine grim slurp batsignal brightnessctl xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-xapp wl-clipboard network-manager-applet
+   |kvantum kvantum-qt5 qt5 qt6 qt5-base qt6-base qt5-wayland qt6-wayland nerd-fonts gtk-engines gtk-engine-murrine grim slurp batsignal brightnessctl xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-xapp wl-clipboard network-manager-applet kitty 
 
 #### Programs
 
