@@ -17,9 +17,9 @@
 			"group/connections",
 			"tray",
 			"keyboard-state",
-			"clock",
+			"battery",
 			"custom/weather",
-			"battery"
+			"clock"
 		]
 	},
 

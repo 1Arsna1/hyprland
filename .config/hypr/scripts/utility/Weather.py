@@ -111,7 +111,7 @@ prediction = f"\n\n (hourly) {prediction}" if len(prediction) > 0 else predic
 tooltip_text = str.format(
     "\t\t{}\t\t\n{}\n{}\n{}\n\n{}\n{}\n{}{}",
     f'<span size="xx-large">{temp}</span>',
-    f"<big> {icon}</big>",
+    f"<big> <span font='20'>{icon}</span></big>",
     f"<b>{status}</b>",
     f"<small>{temp_feel_text}</small>",
     f"<b>{temp_min_max}</b>",
@@ -130,8 +130,8 @@ out_data = {
 print(json.dumps(out_data))
 
 simple_weather = (
-    f"{icon}  {status}\n"
-    + f"  {temp} ({temp_feel_text})\n"
+    f"{icon} {status}\n"
+    + f" {temp} ({temp_feel_text})\n"
     + f"{wind_text} \n"
     + f"{humidity_text} \n"
     + f"{visibility_text} AQI{air_quality_index}\n"

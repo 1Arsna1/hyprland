@@ -1,9 +1,11 @@
 #backlight,
 #wireplumber,
-#pulseaudio,
-#pulseaudio.microphone {
+#pulseaudio {
   background-color: @bg;
   padding: 0em 0.5em 0em 1em;
+}
+#pulseaudio.microphone {
+  padding: 0em 1.25em 0em 1em;
 }
 
 #backlight {

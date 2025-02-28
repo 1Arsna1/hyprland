@@ -4,7 +4,7 @@
 # Remember to add city 
 
 city=
-cachedir="~/.cache/rbn"
+cachedir="$XDG_CACHE_GOME/rbn"
 cachefile=${0##*/}-$1
 
 if [ ! -d $cachedir ]; then

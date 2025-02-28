@@ -1,6 +1,6 @@
 {
 	"network": {
-		"format-wifi": "<span font='18'>{icon}</span>",
+		"format-wifi": "<span font='20'>{icon}</span>",
 		"format-icons": [
 			"<span color='#ff007c'>󰤯</span>",
 			"<span color='#ff757f'>󰤟</span>",
@@ -19,7 +19,7 @@
 	},
 	"bluetooth": {
 		"format-on": "<span font='14'></span>",
-		"format-connected": "<span font='14'>󰂱</span>",
+		"format-connected": "<span font='16'>󰂱</span>",
 		"format-off": "<span font='14'>󰂲</span>",
 		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
