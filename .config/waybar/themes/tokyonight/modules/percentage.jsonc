@@ -6,7 +6,7 @@
 		"format-muted": "<span font='18'></span> {volume}%",
 		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --inc",
 		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --dec",
-		"on-click-right": "ghostty --class=sound.sound -e pulsemixer",
+		"on-click-right": "ghostty --class=term.sound -e pulsemixer",
 		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle"
 	},
 	"pulseaudio/slider": {
@@ -23,6 +23,7 @@
 		"on-click": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --toggle-mic",
 		"on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-inc",
 		"on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/utility/volume --mic-dec",
+		"on-click-right": "ghostty --class=term.sound -e pulsemixer",
 		"scroll-step": 5
 	},
 	"backlight": {

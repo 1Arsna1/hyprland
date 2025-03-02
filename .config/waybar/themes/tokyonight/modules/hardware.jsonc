@@ -1,7 +1,7 @@
 {
 	"gamemode": {
-		"format": "{glyph}",
-		"format-alt": "{glyph} {count}",
+		"format": "{glyph} ",
+		"format-alt": "{glyph} {count} ",
 		"glyph": "󰊖",
 		"hide-not-running": true,
 		"use-icon": true,
@@ -40,8 +40,9 @@
 	},
 	"systemd-failed-units": {
 		"hide-on-ok": false, // Do not hide if there is zero failed units.
-		"format": "<span color='#ff007c'>✗ {nr_failed}</span>",
-		"format-ok": "<span color='#4fd6be'>✓</span>",
+		"format": "<span color='#ff007c'>{nr_failed}</span><span color='#ff007c' font='18'>✗</span>",
+		"format-ok": "<span color='#4fd6be'font='18'>✓</span>",
+		"tooltip": true,
 		"system": true, // Monitor failed systemwide units.
 		"user": true // Ignore failed user units.
 	}

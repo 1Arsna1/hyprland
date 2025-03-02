@@ -75,7 +75,7 @@ submenu_delay=250
 tooltip_blur_radius=0
 
 [GeneralColors]
-window.color=#16161e
+window.color=#1d1e2a
 base.color=#1a1b26
 alt.base.color=#1a1b26
 button.color=#1d1f2b
@@ -97,9 +97,9 @@ progress.indicator.text.color=#15161E
 
 [Hacks]
 transparent_ktitle_label=true
-transparent_dolphin_view=false
+transparent_dolphin_view=true
 transparent_pcmanfm_sidepane=true
-blur_translucent=true
+blur_translucent=false
 transparent_menutitle=true
 respect_darkness=true
 force_size_grip=true

@@ -2,7 +2,7 @@
 export HYPRCURSOR_SIZE=24
 export HYPRCURSOR_THEME=Silver-Wolf-Hypr
 export XCURSOR_SIZE=24
-export GTK_THEME=Tokyonight-night-Dark
+#export GTK_THEME=Tokyonight-night-Dark
 export XCURSOR_THEME=Silver-Wolf-xorg
 #export HYPRLAND_LOG_WLR=1
 #export HYPRLAND_NO_RT=0
@@ -43,19 +43,6 @@ export HYPRLAND_TRACE=1
 # AMD
 #export AMD_VULKAN_ICD=RADV
 
-#Toolkit
-export QT_QUICK_CONTROLS_STYLE=org.hyprland.style 
-export CLUTTER_BACKEND=wayland
-export SDL_VIDEODRIVER=wayland,x11,windows
-export GDK_BACKEND=wayland,x11,*
-export QT_QPA_PLATFORM=wayland;xcb
-export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export QT_WAYLAND_DECORATION=adwaita
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
-#export QT_STYLE_OVERRIDE=kvantum
-export GTK_THEME_VARIANT=dark
-
 #XDG
 export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_TYPE=wayland
@@ -71,7 +58,6 @@ export MOZ_ENABLE_WAYLAND=1
 # export NVD_BACKEND=direct
 # export ELECTRON_OZONE_PLATFORM_HINT=auto
 # export MOZ_DISABLE_RDD_SANDBOX=1
-
 
 #Aquamarine
 #export AQ_DRM_DEVICES=/dev/dri/card1:/dev/dri/card0
