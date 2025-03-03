@@ -20,20 +20,3 @@
   font-weight: bold;
   font-size: 12;
 }
-.control-center {
-  border: 2px solid;
-  border-radius: 1em;
-  border-color: @blue;
-  background: @bg;
-  color: @text;
-}
-
-.widget-volume,
-.widget-backlight,
-.widget-buttons-grid {
-  background-color: @bg;
-}
-
-.text-button {
-  background-color: @group-bg;
-}
