@@ -1,13 +1,14 @@
 # Hyprland
-export HYPRCURSOR_SIZE=24
+export HYPRCURSOR_SIZE=32
 export HYPRCURSOR_THEME=Silver-Wolf-Hypr
-export XCURSOR_SIZE=24
+export XCURSOR_SIZE=32
 #export GTK_THEME=Tokyonight-night-Dark
 export XCURSOR_THEME=Silver-Wolf-xorg
 #export HYPRLAND_LOG_WLR=1
 #export HYPRLAND_NO_RT=0
 #export HYPRLAND_NO_SD_NOTIFY=0
 export HYPRLAND_TRACE=1
+export BEMENU_BACKEND=curses
 
 # GLX
 #export __GLX_VENDOR_LIBRARY_NAME=mesa

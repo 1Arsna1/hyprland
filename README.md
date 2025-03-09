@@ -9,12 +9,12 @@
 #### Dependencies
 
 1. Base Dependencies
-   |kvantum kvantum-qt5 qt5 qt6 qt5-base qt6-base qt5-wayland qt6-wayland nerd-fonts gtk-engines gtk-engine-murrine grim slurp batsignal brightnessctl xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-xapp wl-clipboard network-manager-applet kitty 
+   |kvantum kvantum-qt5 qt5 qt6 qt5-base qt6-base qt5-wayland qt6-wayland nerd-fonts gtk-engines gtk-engine-murrine grim slurp batsignal brightnessctl xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-xapp wl-clipboard network-manager-applet kitty bemenu bemenu-ncurses
 
 #### Programs
 
 1. Programs this rice needs
-   |fish starship nwg-look nemo swww pulsemixer pavucontrol waybar-cava-git swaync neovim zellij
+   |fish starship nwg-look nemo swww pulsemixer pavucontrol waybar-cava-git swaync neovim zellij clipse 
 
 ## ToDo
 

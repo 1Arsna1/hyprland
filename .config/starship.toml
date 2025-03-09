@@ -7,7 +7,6 @@ $hostname\
 [ ](fg:#1d1e2a bg:#3b4261)\
 $directory\
 [ ](fg:#1d1e2a bg:#3b4261)\
-$git_metrics\
 $git_status\
 [ ](fg:#1d1e2a bg:#00000000)\
 $battery\
@@ -85,11 +84,6 @@ truncation_length = 3
 "nvim" = ""
 "isos" = "󰻂"
 "vms" = "󰒋"
-
-[git_metrics]
-"format" = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
-"added_style" = '#7dcfff'
-"deleted_style" = '#ff757f'
 
 [git_status]
 "format" = '([ \[$all_status$ahead_behind\] ]($style))'

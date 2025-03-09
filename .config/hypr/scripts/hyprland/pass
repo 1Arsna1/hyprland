@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 export GNUPGHOME=/home/arsna/.local/share/gnupg
 export PASSWORD_STORE_DIR=/home/arsna/.local/share/pass
-uwsm app -- tessen
+BEMENU_BACKEND=curses
+uwsm app -- ghostty -e $(tessen -d bemenu)
