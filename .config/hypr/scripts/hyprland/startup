@@ -1,0 +1,25 @@
+#!/bin/bash
+uwsmb=uwsm-app -s b --
+uwsms=uwsm-app -s s --
+uwsm=uwsm-app -s a --
+notify=hyprnotify
+bar=waybar
+#wall=swww-daemon
+clip=clipse
+
+
+killall $bar 
+killall $notify
+killall $wall
+killall hyprsunset
+killall cava
+killall hyprsunset
+killall nm-applet
+
+$uwsmb $bar &
+$uwsmb $notify -f 20 &
+$uwsms $clip -listen &
+$uwsms $clip -wl-store &
+$uwsms $clip -clear-all
+$uwsms hyprsunset &
+$uwsm nm-applet &

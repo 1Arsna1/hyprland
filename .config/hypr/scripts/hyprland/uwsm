@@ -1,4 +1,0 @@
- #!/bin/sh
-  printf '0%s' app "$@" > "${XDG_RUNTIME_DIR}/uwsm-app-daemon-in"
-  IFS='' read -r cmd < "${XDG_RUNTIME_DIR}/uwsm-app-daemon-out"
-  eval "$cmd"

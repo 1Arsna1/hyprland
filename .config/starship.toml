@@ -6,12 +6,13 @@ $username\
 $hostname\
 [ ](fg:#1d1e2a bg:#3b4261)\
 $directory\
-[ ](fg:#1d1e2a bg:#3b4261)\
+[ ](fg:#161720 bg:#3b4261)\
+$fill\
 $git_status\
-[ ](fg:#1d1e2a bg:#00000000)\
 $battery\
 \n$character"""
-
+[fill]
+"style" = 'white'
 [character]
 success_symbol = '[ 󱞩](bold green) '
 error_symbol = '[ 󱞩 ](bold red) '
@@ -113,7 +114,6 @@ charging_symbol = '󰂄'
 "empty_symbol" = '󰂎'
 "discharging_symbol" = '󰂃'
 "format" = '[$symbol$percentage]($style) '
-style = 'fg:#4fd6be'
 [[battery.display]] 
 threshold = 90
 "discharging_symbol" = '󰂂'
