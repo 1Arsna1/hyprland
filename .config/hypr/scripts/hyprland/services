@@ -1,5 +1,7 @@
 #!/bin/bash
 
+systemctl --user stop wayland-wm-app-daemon.service
+systemctl --user start wayland-wm-app-daemon.service
 systemctl --user stop pipewire.service wireplumber.service pipewire.socket pipewire-pulse.service pipewire-pulse.socket
 systemctl --user start pipewire.service wireplumber.service pipewire.socket pipewire-pulse.service pipewire-pulse.socket
 systemctl --user stop xdg-desktop-portal.service
@@ -15,4 +17,4 @@ systemctl --user start hyprpolkitagent.service
 systemctl --user stop hyprpaper.service
 systemctl --user start hyprpaper.service
 systemctl --user stop hypridle.service
-#systemctl --user start hypridle.service
+systemctl --user start hypridle.service

@@ -14,7 +14,7 @@
 #### Programs
 
 1. Programs this rice needs
-   |fish starship nwg-look nemo swww pulsemixer pavucontrol waybar-cava-git swaync neovim zellij clipse 
+   |fish starship nwg-look nemo swww pulsemixer pavucontrol waybar swaync neovim zellij clipse cava
 
 ## ToDo
 
