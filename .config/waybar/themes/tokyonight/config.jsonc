@@ -1,4 +1,5 @@
 [
+
 	{
 		"include": [
 			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
@@ -10,7 +11,7 @@
 		"passthrough": false,
 		"gtk-layer-shell": true,
 		"fixed-center": true,
-		"width": 1920,
+		"width": 2560,
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,
@@ -18,18 +19,19 @@
 		"modules-center": ["group/hyprland"],
 		"modules-right": ["group/menu", "group/media"]
 	},
+
 	{
 		"include": [
 			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/groups.jsonc",
 			"$XDG_CONFIG_HOME/waybar/themes/tokyonight/modules/main.jsonc"
 		],
 		"mode": "dock",
-		"output": ["HDMI-A-1"],
+		"output": ["DP-2"],
 		"exclusive": true,
 		"passthrough": false,
 		"gtk-layer-shell": true,
 		"fixed-center": true,
-		"width": 1680,
+		"width": 1920,
 		"layer": "bottom",
 		"position": "top",
 		"reload_style_on_change": true,

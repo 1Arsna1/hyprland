@@ -1,0 +1,12 @@
+#!/bin/bash
+UWSMB=uwsm-app -s b --
+UWSMS=uwsm-app -s s --
+UWSM=uwsm-app -s a --
+
+killall waybar
+killall cava
+clipse -kill
+
+
+$UWSMB waybar &
+$UWSMS clipse -listen

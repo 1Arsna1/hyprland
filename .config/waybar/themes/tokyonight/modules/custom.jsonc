@@ -5,9 +5,9 @@
 		"format-alt-click": "click",
 		"interval": 3600,
 		"return-type": "json",
-		"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/Weather.py",
-		//"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/weather",
-		//"exec-if": "ping wttr.in -c1",
+		//"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/Weather.py",
+		"exec": "$XDG_CONFIG_HOME/hypr/scripts/utility/weather",
+		"exec-if": "ping wttr.in -c1",
 		"tooltip": true
 	},
 	"custom/wall": {

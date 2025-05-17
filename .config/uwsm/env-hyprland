@@ -9,6 +9,9 @@ export XCURSOR_THEME=Silver-Wolf-xorg
 #export HYPRLAND_NO_SD_NOTIFY=0
 export HYPRLAND_TRACE=1
 export BEMENU_BACKEND=curses
+export ENABLE_HDR_WSI=1 
+export DXVK_HDR=1
+export RADV_PERFTEST=gpl
 
 # GLX
 #export __GLX_VENDOR_LIBRARY_NAME=mesa
@@ -31,7 +34,7 @@ export BEMENU_BACKEND=curses
 # OpenGL
 #export LIBGL_ALWAYS_SOFTWARE=1
 #export MESA_LOADER_DRIVER_OVERRIDE=radeonsi
-#export GALLIUM_DRIVER=llvmpipe
+#export GALLIUM_DRIVER=zink
 
 # Vulkan
 #export ENABLE_DEVICE_CHOOSER_LAYER=1
@@ -43,7 +46,7 @@ export BEMENU_BACKEND=curses
 
 # AMD
 #export AMD_VULKAN_ICD=RADV
-
+#expor RUSTICL_ENABLE=radeonsi
 #XDG
 export XDG_CURRENT_DESKTOP=Hyprland
 export XDG_SESSION_TYPE=wayland
